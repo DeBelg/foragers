@@ -7,7 +7,7 @@ button{
     background-color: transparent;
     border-radius: 5px;
     color: white;
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin-left: 25vw;
     margin-right: 25vw;
     margin-top: 5%;
@@ -16,9 +16,37 @@ button{
     text-align: center;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
-    padding-left: 0.2e5m;
-    padding-right: 0.2e5m;
-border-width: 15px;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+border-width: 7,5px;
 
 }
+
+
+@media only screen and (min-width: 992px) {
+
+   
+
+    button {
+
+        background-color: transparent;
+        border-radius: 5px;
+        color: white;
+        font-size: 2.5em;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        margin-top: 5%;
+        min-height: 4em;
+        min-width: 48.5vw;
+        text-align: center;
+        padding-bottom: 0.25em;
+        padding-top: 0.25em;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    border-width: 15px;
+
+    }
+
+}
+
 

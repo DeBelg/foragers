@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist\\mfdev-connect",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
