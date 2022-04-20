@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'EmbeddedDocsLandingPage';
+  title = 'Foragers Devconnect';
+  items = ['Minimum Valid Whitepaper'];
+  expandedIndex = 0;
 }

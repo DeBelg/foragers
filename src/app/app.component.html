@@ -1,17 +1,42 @@
 <header>
-<link rel="app.component.css" href="./app.component.css"> 
+  <link rel="app.component.css" href="./app.component.css">
 </header>
 
-<body> 
+<body>
   <main>
 
     <mat-card style="background: black; border: 0px; border-radius: 0%; max-width: 100%	;">
-
-      <img width="100%" src="../assets/foragers newstyle.jpg">
-
-      <app-googledocscanvas> </app-googledocscanvas>
+      
+      <div><a
+        href="https://docs.google.com/document/d/1yJzJ81tLywJV2xVhgA25c_rDGV1mINt6/edit?usp=sharing&ouid=105742122451923639517&rtpof=true&sd=true">
+        <img width="100%" src="../assets/foragers newstyle.jpg"> </a>  </div>
       <br>
-      <img width="100%"  src="../assets/savvysavage.jpg">
+      <a class="commentlink"
+        href="https://docs.google.com/document/d/1yJzJ81tLywJV2xVhgA25c_rDGV1mINt6/edit?usp=sharing&ouid=105742122451923639517&rtpof=true&sd=true">
+      <button> 
+      
+        Click here to propose changes!  </button></a>
+        <cdk-accordion>
+          <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
+            class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+            [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+            <div class="accordion-item-header" (click)="accordionItem.toggle()">
+              
+              <span class="accordion-item-description">
+                <a><button id="accordion-button">  {{ accordionItem.expanded ? 'Close' : 'Open' }} the  {{ item }}   </button> </a>
+              </span>
+            </div>
+            <div class="example-accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
+              [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
+              <app-googledocscanvas> </app-googledocscanvas>
+            </div>
+          </cdk-accordion-item>
+        </cdk-accordion>
+
+        <div> <a href="https://app.clarity.so/invite-link/hFMs2azcmk "> <button>   Become part of Foragers!  </button></a>
+        </div>
+      <br>
+
     </mat-card>
   </main>
 
@@ -19,3 +44,5 @@
 
 
 </body>
+
+<footer> </footer>
